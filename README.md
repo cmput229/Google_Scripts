@@ -14,12 +14,25 @@ You can skip this part if you already have a folder and file you want to duplica
 **Assumption**: You have a folder with a template document created. If not, go to the [previous section](#Setup).
 1. Go to https://script.google.com/home and create a new project.
 2. You'll notice you get a code editor with some code on it.
+```js
+function myFunction() {
+  
+}
+```
 3. Download this repository by clicking on the green dropdown button and then selecting the ZIP option.
 4. Once downloaded, you can extract the zip folder.
 5. Open the folder you've downloaded, and open the file called `participation_document_duplication.gs` with a text editor (notepad if on Windows or TextEdit on macOS).
 6. Copy everything from that file and paste it into the code editor on Google App Script.
-7. Fill out the parameters at the top with the values you want. Reference the parameters table.
+7. Fill out the parameters at the top with the values you want. Reference [the parameters table](#Parameters).
 8. Once you've filled out the parameters, select duplicate from the dropdown menu at the top.
 9. Now click run.
 10. A log at the bottom will open up with progress. If any errors occur, it will notify you via the logs.
 11. Once it says *Execution completed*, you can look at your folder with all the new files it has created.
+### Parameters
+PARAMETER NAME|DESCRIPTION|TYPE|EXAMPLE|
+---|---|---|---
+FOLDER|The name of the folder you want to use. Must contain the template file you wish to duplicate.|String|`"test folder"`
+FILENAME|The name of the template file you wish to duplicate.|String|`"template file"`
+GROUPS_N|The number of duplications you want to create.|Number|`15`
+OUTPUT_FILENAME|The output name of the duplicated folder. Ouptut will be of format: `Room {x}: {OUTPUT_FILENAME}`.|String|`"Jan 2 Exercise"`
+SHARE_WITH|A list of emails you wish to share the folder with. Users will be given Editor access.|[String]|`["pernudi@ualberta.ca", "jamaral@ualberta.ca"]` or `[]` (if don't want to share)
