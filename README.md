@@ -21,7 +21,7 @@ function myFunction() {
   
 }
 ```
-3. Open `participation_document_duplication.gs` by clicking on it on GitHub.
+3. Open [`participation_document_duplication.gs`](https://raw.githubusercontent.com/cmput229/Google_Scripts/main/participation_document_duplication.gs?token=AHN6LHCFTHZZVJRBQRQFU4LAUK2YI) by clicking on it on GitHub.
 ![step 3 screenshot](docs/img/step3.png)
 4. Copy everything from that file and paste it into the code editor on Google App Script.
 5. Fill out the parameters at the top with the values you want. Reference [the parameters table](#Parameters).
