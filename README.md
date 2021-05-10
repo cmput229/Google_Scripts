@@ -30,7 +30,7 @@ function myFunction() {
 ![step 7 screenshot](docs/img/step7.png)
 8. Once you've filled out the parameters, select duplicate from the dropdown menu at the top.
 ![step 8 screenshot](docs/img/step8.png)
-9. Now click run.
+9. Now click run. If you're running this script for the first time. Google will open a pop-up asking for permission to your google drive and asking if you trust this script. Accept it.
 ![step 8 screenshot](docs/img/step9.png)
 10. A log at the bottom will open up with progress. If any errors occur, it will notify you via the logs.
 11. Once it says *Execution completed*, you can look at your folder with all the new files it has created.
