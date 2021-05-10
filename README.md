@@ -21,19 +21,17 @@ function myFunction() {
   
 }
 ```
-3. Download this repository by clicking on the green dropdown button and then selecting the ZIP option.
+3. Open `participation_document_duplication.gs` by clicking on it on GitHub.
 ![step 3 screenshot](docs/img/step3.png)
-4. Once downloaded, you can extract the zip folder.
-5. Open the folder you've downloaded, and open the file called `participation_document_duplication.gs` with a text editor (notepad if on Windows or TextEdit on macOS).
-6. Copy everything from that file and paste it into the code editor on Google App Script.
-7. Fill out the parameters at the top with the values you want. Reference [the parameters table](#Parameters).
+4. Copy everything from that file and paste it into the code editor on Google App Script.
+5. Fill out the parameters at the top with the values you want. Reference [the parameters table](#Parameters).
 ![step 7 screenshot](docs/img/step7.png)
-8. Once you've filled out the parameters, select duplicate from the dropdown menu at the top.
+6. Once you've filled out the parameters, select duplicate from the dropdown menu at the top.
 ![step 8 screenshot](docs/img/step8.png)
-9. Now click run. If you're running this script for the first time. Google will open a pop-up asking for permission to your google drive and asking if you trust this script. Accept it.
+7. Now click run. If you're running this script for the first time. Google will open a pop-up asking for permission to your google drive and asking if you trust this script. Accept it.
 ![step 8 screenshot](docs/img/step9.png)
-10. A log at the bottom will open up with progress. If any errors occur, it will notify you via the logs.
-11. Once it says *Execution completed*, you can look at your folder with all the new files it has created.
+8. A log at the bottom will open up with progress. If any errors occur, it will notify you via the logs.
+9. Once it says *Execution completed*, you can look at your folder with all the new files it has created.
 ### Parameters
 PARAMETER NAME|DESCRIPTION|TYPE|EXAMPLE|
 ---|---|---|---
