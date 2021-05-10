@@ -31,7 +31,6 @@ function duplicate() {
   }
 
   // Share the folder
-  console.info(`Sharing with: ${SHARE_WITH}`)
   share(root)
 }
 
@@ -54,5 +53,7 @@ function getTemplateFile(folder, filename) {
 }
 
 function share(folder) {
+  if (SHARE_WITH.length == 0) return
+  console.info(`Sharing with: ${SHARE_WITH}`)
   folder.addEditors(SHARE_WITH)
 }
