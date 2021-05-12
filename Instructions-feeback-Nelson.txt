@@ -1,0 +1,12 @@
+
+In step 3:
+
+It is not clear if I should copy everything and replace the
+
+function myFunction() {
+
+}
+
+that was there or if I should copy everyting inside the myFunction body.
+
+When I finish step 5 I do not have a Duplicate option (needed in Step 6). The only option that I have is "Deploy" (see docs/img/ScreenAfterDeploy.png).
