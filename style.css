@@ -1,0 +1,11 @@
+body {
+    padding: 0 1rem;
+}
+
+.code-string {
+    color: #da9bff;
+}
+
+.code-number {
+    color: #ff8690;
+}

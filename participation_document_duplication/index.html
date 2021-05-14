@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participation Document Duplication</title>
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@10.7.2/styles/default.min.css">
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@10.7.2/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+<body>
+    <h1>Participation Document Duplication</h1>
+    <h3>Contact: <a href="mailto:pernudi@ualberta.ca">Giancarlo Pernudi Segura</a></h3>
+    <p>
+        <i>Note</i>: You'll be using using your UAlberta GSuite account for these instructions.
+    </p>
+    <h2 id="setup">Setup</h2>
+    <p>
+        You can skip this part if you already have a folder and file you want to duplicate.
+        <ol>
+            <li>
+                Go to <a href="https://drive.google.com/drive/">Google Drive</a>.
+            </li>
+            <li>
+                Create a new folder and give it a unique name not used elsewhere.
+            </li>
+            <li>
+                In that folder you've created, create a new document of any type and give it a unique name.
+            </li>
+            <li>
+                Now you can edit that file you've created and populate it with content.
+            </li>
+        </ol>
+    </p>
+    <h2>Run</h2>
+    <p>
+        <b>Assumption</b>: You have a folder with a template document created. If not, go to the <a href="#setup">previous section</a>.
+    </p>
+    <ol>
+        <li>Parameters
+            Go to <a href="https://script.google.com/home">https://script.google.com/home</a> and create a new project.
+            <br>
+            <img src="../docs/img/step1.png" alt="step 1 screenshot" class="img-responsive">
+        </li>
+        <li>
+            You'll notice you get a code editor with some code on it. You can delete this code since we'll be replacing it.
+            <br>
+            <img src="../docs/img/step2.png" alt="step 2 screenshot" class="img-responsive">
+            <pre class="code" data-lang="GoogleScript">
+<code>function myFunction() {
+
+}
+</code></pre>
+        </li>
+        <li>
+            Open <a target="_blank"
+                href="https://raw.githubusercontent.com/cmput229/Google_Scripts/main/participation_document_duplication.gs?token=AHN6LHCFTHZZVJRBQRQFU4LAUK2YI">
+                this document</a>.
+        </li>
+        <li>
+            Copy everything from the file you just opened in <b>step 3</b> and paste it into the code editor on Google App Script.
+        </li>
+        <li>
+            Fill out the parameters at the top with the values you want. Reference <a href="#parameters">the parameters table</a>
+            <br>
+            <img src="../docs/img/step7.png" alt="step 7 screenshot" class="img-responsive">
+        </li>
+        <li>
+            Once you've filled out the parameters, <b>save your project</b> by clicking on the floppy disk icon. Then, select duplicate from the dropdown menu at the top.
+            <br>
+            <img src="../docs/img/step8.png" alt="step 8 screenshot" class="img-responsive">
+        </li>
+        <li>
+            Now click run. If you're running this script for the first time. Google will open a pop-up asking for permission to your google drive and asking if you trust this script. Accept it.
+            <br>
+            <img src="../docs/img/step9.png" alt="step 8 screenshot" class="img-responsive">
+        </li>
+        <li>
+            A log at the bottom will open up with progress. If any errors occur, it will notify you via the logs.
+        </li>
+        <li>
+            Once it says <i>Execution completed</i>, you can look at your folder with all the new files it has created.
+        </li>
+    </ol>
+    <h3 id="parameters">Parameters</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>PARAMETER NAME</th>
+                <th>DESCRIPTION</th>
+                <th>TYPE</th>
+                <th>EXAMPLE</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>FOLDER</td>
+                <td>The name of the folder you want to use. Must contain the template file you wish to duplicate.</td>
+                <td>String</td>
+                <td><kbd><span class="code-string">"test folder"</span></kbd></td>
+            </tr>
+            <tr>
+                <td>FILENAME</td>
+                <td>The name of the template file you wish to duplicate.</td>
+                <td>String</td>
+                <td><kbd><span class="code-string">"template file"</span></kbd></td>
+            </tr>
+            <tr>
+                <td>GROUPS_N</td>
+                <td>The number of duplications you want to create.</td>
+                <td>Number</td>
+                <td><kbd><span class="code-number">15</span></kbd></td>
+            </tr>
+            <tr>
+                <td>OUTPUT_FILENAME</td>
+                <td>The output name of the duplicated folder. Ouptut will be of format: <kbd>Room {x}:
+                        {OUTPUT_FILENAME}</kbd>.</td>
+                <td>String</td>
+                <td><kbd><span class="code-string">"Jan 2 Exercise"</span></kbd></td>
+            </tr>
+            <tr>
+                <td>SHARE_WITH</td>
+                <td>A list of emails you wish to share the folder with. Users will be given Editor
+                    access.</td>
+                <td>[String]</td>
+                <td><kbd>[<span class="code-string">"pernudi@ualberta.ca"</span>, <span
+                            class="code-string">"jamaral@ualberta.ca"</span>]</kbd> or <kbd>[]</kbd> (if don't want to
+                    share)</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
