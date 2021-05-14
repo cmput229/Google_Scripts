@@ -14,7 +14,7 @@ You can skip this part if you already have a folder and file you want to duplica
 **Assumption**: You have a folder with a template document created. If not, go to the [previous section](#Setup).
 1. Go to https://script.google.com/home and create a new project.
 ![step 1 screenshot](docs/img/step1.png)
-2. You'll notice you get a code editor with some code on it.
+2. You'll notice you get a code editor with some code on it. You can delete this code since we'll be replacing it.
 ![step 2 screenshot](docs/img/step2.png)
 ```js
 function myFunction() {
@@ -26,7 +26,7 @@ function myFunction() {
 4. Copy everything from that file and paste it into the code editor on Google App Script.
 5. Fill out the parameters at the top with the values you want. Reference [the parameters table](#Parameters).
 ![step 7 screenshot](docs/img/step7.png)
-6. Once you've filled out the parameters, select duplicate from the dropdown menu at the top.
+6. Once you've filled out the parameters, **save your project** by clicking on the floppy disk icon. Then, select duplicate from the dropdown menu at the top.
 ![step 8 screenshot](docs/img/step8.png)
 7. Now click run. If you're running this script for the first time. Google will open a pop-up asking for permission to your google drive and asking if you trust this script. Accept it.
 ![step 8 screenshot](docs/img/step9.png)
